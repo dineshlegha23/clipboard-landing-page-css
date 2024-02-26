@@ -17,6 +17,13 @@ body {
   color: var(--dark-grayish-blue);
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -58,7 +65,7 @@ body {
 .ios,
 .mac {
   font-size: large;
-  padding: 1rem 3rem;
+  padding: 1.2rem 3rem;
   color: white;
   border-radius: 100vh;
   border: 0;
@@ -137,4 +144,90 @@ body {
 .devices-image {
   display: grid;
   place-items: center;
+}
+
+.supercharge-workflow {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  gap: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  max-width: 350px;
+}
+
+.icons {
+  min-height: 50px;
+}
+
+.workflow-heading {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.workflow-desc {
+  color: var(--grayish-blue);
+}
+
+.company-logos {
+  margin-block: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  img {
+    height: fit-content;
+  }
+}
+
+.last-btns {
+  margin-top: -2rem;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 3rem 2rem;
+  background-color: hsl(201, 11%, 97%);
+}
+
+.footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+}
+
+.logo-image img {
+  width: 55px;
+  margin-right: 1rem;
+}
+
+li {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: hsl(201, 11%, 50%);
+
+  &:hover {
+    color: var(--strong-cyan);
+  }
+}
+
+.social-icons {
+  position: absolute;
+  display: flex;
+  gap: 1.2rem;
+  right: 10%;
+  img {
+    height: fit-content;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
