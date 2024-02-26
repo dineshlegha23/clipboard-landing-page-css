@@ -1,5 +1,140 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree";
+  color: var(--dark-grayish-blue);
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  background: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  font-size: 1.4rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-text-container {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-heading {
+  font-weight: 600;
+}
+
+.hero-description {
+  line-height: 2rem;
+  font-size: 1.28rem;
+  color: var(--grayish-blue);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ios,
+.mac {
+  font-size: large;
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 100vh;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ios {
+  background-color: var(--strong-cyan);
+
+  &:hover {
+    background-color: hsl(171, 66%, 48%);
+  }
+}
+
+.mac {
+  background-color: var(--light-blue);
+
+  &:hover {
+    background-color: hsl(233, 100%, 72%);
+  }
+}
+
+.text-container {
+  margin: 7rem auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 640px;
+  text-align: center;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.description {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.features {
+  display: flex;
+  gap: 1rem;
+}
+
+.features i img {
+  position: relative;
+  left: -5rem;
+}
+
+.secondary-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 350px;
+}
+
+.secondary-text-heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.secondary-text-desc {
+  margin-top: 1rem;
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+}
+
+.devices-image {
+  display: grid;
+  place-items: center;
 }
