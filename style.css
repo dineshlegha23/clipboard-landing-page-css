@@ -15,6 +15,7 @@
 body {
   font-family: "Bai Jamjuree";
   color: var(--dark-grayish-blue);
+  padding: 0 2rem;
 }
 
 ul {
@@ -90,7 +91,7 @@ ul {
 }
 
 .text-container {
-  margin: 7rem auto 5rem;
+  margin: 8rem auto 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,12 +114,16 @@ ul {
 
 .features {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
 .features i img {
   position: relative;
-  left: -5rem;
+  left: -25%;
+  width: 60vw;
+  max-width: 750px;
 }
 
 .secondary-text-container {
@@ -141,9 +146,12 @@ ul {
   font-size: 0.9rem;
 }
 
-.devices-image {
+.devices-image img {
   display: grid;
   place-items: center;
+  margin: 0 auto;
+  width: 70vw;
+  max-width: 600px;
 }
 
 .supercharge-workflow {
@@ -178,6 +186,7 @@ ul {
   margin-block: 10rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 5rem;
 
   img {
@@ -207,6 +216,11 @@ footer {
   margin-right: 1rem;
 }
 
+.links {
+  display: flex;
+  gap: 6rem;
+}
+
 li {
   cursor: pointer;
   font-weight: 500;
@@ -229,5 +243,97 @@ li {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .features i img {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .devices-image img {
+    width: 80%;
+  }
+
+  .supercharge-workflow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .buttons {
+    flex-direction: column;
+    width: inherit;
+    align-items: normal;
+  }
+
+  .main-section i img {
+    width: 100px;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .features i img {
+    width: 100%;
+  }
+
+  .devices-image img {
+    width: 100%;
+  }
+
+  .company-logos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    gap: 0;
+  }
+
+  li {
+    margin-block: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .social-icons {
+    position: relative;
+    right: auto;
   }
 }
